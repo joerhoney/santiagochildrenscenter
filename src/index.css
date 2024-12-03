@@ -93,19 +93,25 @@ h6 {
 }
 
 details {
-  @apply py-4;
+  /* @apply py-4; */
 }
 
 details + details {
   @apply border-t-2;
 }
 
-summary + * {
-  @apply pt-4;
+details ol,
+details ul,
+details p {
+  @apply mb-4;
 }
 
-summary *:last-child {
+details > *:last-child {
   @apply pb-4;
+}
+
+summary {
+  @apply font-bold pt-3 pb-4;
 }
 
 @media (prefers-color-scheme: light) {

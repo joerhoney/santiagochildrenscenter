@@ -213,7 +213,7 @@ function App() {
           </div>
         </section>
 
-        <section className="shape-gradient px-6 py-8 m-0 text-black">
+        <section className="shape-gradient px-6 py-12 m-0 text-black">
           <h2 className="font-serif text-2xl pb-2 font-bold text-black w-[240px]">
             Frequently Asked Questions
           </h2>
@@ -227,7 +227,7 @@ function App() {
           </details>
           <details>
             <summary>What do the licensing requirements include?</summary>
-            <ul>
+            <ul className="list-disc ml-4">
               <li>Complying with safety and health inspections</li>
               <li>Achieving the required levels of educational training</li>
               <li>Maintaining a minimum caregiver-to-child ratio</li>
@@ -246,8 +246,10 @@ function App() {
           <details>
             <summary>How long have you been in business?</summary>
             <p>Santiago Children's Center was established in 1983.</p>
+          </details>
+          <details>
             <summary>What does your Pre-K Program include?</summary>
-            <ul>
+            <ul className="list-disc ml-4">
               <li>Reading</li>
               <li>Math</li>
               <li>Science</li>
@@ -255,12 +257,12 @@ function App() {
           </details>
           <details>
             <summary>What type of day care are you?</summary>
-            <ul>
+            <ul className="list-disc ml-4">
               <li>In-home/family day care</li>
               <li>Preschool (or nursery school or pre-k)</li>
             </ul>
             <p>Philosophy:</p>
-            <ul>
+            <ul className="list-disc ml-4">
               <li>Academic</li>
               <li>Developmental (play-based)</li>
               <li>Outdoor/nature</li>
@@ -268,7 +270,7 @@ function App() {
           </details>
           <details>
             <summary>What services do you offer?</summary>
-            <ul>
+            <ul className="list-disc ml-4">
               <li>Services Offered</li>
               <li>Verified by Business</li>
               <li>In-home Child Care</li>

@@ -9,15 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        deepgreen: "#121f26",
-        forest: "#3D696D",
-        white: "#ffffff",
         aqua: "#30b9b1",
+        deepgreen: "#1a3442",
+        forest: "#3D696D",
         rose: "#ffd6db",
-        peach: "#fff5cc",
-        "gray-dark": "#273444",
+        peach: "#fffacc",
+        white: "#ffffff",
         gray: "#8492a6",
-        "gray-light": "#d3dce6",
       },
       fontFamily: {
         sans: ["Host Grotesk", "sans-serif"],

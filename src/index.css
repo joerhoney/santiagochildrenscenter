@@ -32,30 +32,57 @@ h6 {
 }
 
 .btn {
-  z-index: 1;
   @apply relative block text-center text-white font-bold py-3 px-4 cursor-pointer;
 }
+
+.btn > * {
+  @apply relative z-10;
+}
+
 .btn::after {
   content: "";
-  z-index: -1;
   @apply absolute block inset-0 w-full h-full bg-aqua;
 }
 
-.btn--shape::before {
-  content: "";
-  z-index: -1;
-  @apply absolute bg-fixed block -top-2 left-2 w-full h-full bg-gradient-to-br from-rose to-peach;
+.shape-gradient {
+  @apply bg-fixed bg-gradient-to-br from-rose to-peach;
 }
 
-.shape {
+.shape-S,
+.shape-M,
+.shape-L {
+  @apply relative;
+}
+
+.shape-S > *,
+.shape-M > *,
+.shape-L > * {
+  @apply relative z-10;
+}
+
+.shape-S::before,
+.shape-M::before,
+.shape-L::before {
+  content: "";
+  z-index: 0;
+  @apply absolute bg-fixed block bg-gradient-to-br from-rose to-peach;
+}
+
+.shape-S::before {
+  @apply -top-2 left-2 -right-2 bottom-2;
+}
+
+.shape-M::before {
+  @apply -top-4 left-4 -right-4 bottom-4;
+}
+
+.shape-L::before {
+  @apply -top-6 left-6 -right-6 bottom-6;
+}
+
+/* .shape-L {
   @apply relative block pt-6 pr-6 mx-auto w-max;
-}
-
-.shape::before {
-  content: "";
-  z-index: -1;
-  @apply absolute bg-fixed block top-0 left-6 right-0 bottom-6 w-full h-full bg-gradient-to-br from-rose to-peach;
-}
+} */
 
 .btn:focus,
 .btn:hover {
@@ -63,6 +90,22 @@ h6 {
 }
 .btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+details {
+  @apply py-4;
+}
+
+details + details {
+  @apply border-t-2;
+}
+
+summary + * {
+  @apply pt-4;
+}
+
+summary *:last-child {
+  @apply pb-4;
 }
 
 @media (prefers-color-scheme: light) {

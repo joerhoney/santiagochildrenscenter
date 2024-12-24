@@ -9,18 +9,18 @@ import children_watching_turtle_ai2x from "./assets/photos/children_watching_tur
 import children_watching_terrarium_ai2x from "./assets/photos/children_watching_terrarium_ai2x.jpg";
 import children_looking_at_horse from "./assets/photos/children_looking_at_horse.webp";
 import girl_n_horse_looking_at_each_other from "./assets/photos/girl_n_horse_looking_at_each_other.jpg";
-import diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import children_on_patio_ai4x from "./assets/photos/children_on_patio_ai4x.jpg";
 import girl_on_pony_graded from "./assets/photos/girl_on_pony_graded.webp";
-import JeriD from "/assets/testimonials/JeriD.jpg";
-import GivannaN from "/assets/testimonials/GivannaN.jpg";
-import CourtneyT from "/assets/testimonials/CourtneyT.jpg";
-import schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import JeriD from "./assets/testimonials/JeriD.jpg";
+import GivannaN from "./assets/testimonials/GivannaN.jpg";
+import CourtneyT from "./assets/testimonials/CourtneyT.jpg";
+import schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "./assets/icons/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import children_grooming_horse from "./assets/photos/children_grooming_horse.webp";
 import children_playing_on_playground from "./assets/photos/children_playing_on_playground.webp";
 import children_n_teacher from "./assets/photos/children_n_teacher.webp";
@@ -348,7 +348,7 @@ function App() {
           <div className="flex gap-6 py-4">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>

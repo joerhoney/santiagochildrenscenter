@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./App.css";
-import AFSlides from "./AFSlides";
+import AFSlides from "./components/AFSlides";
 
 function App() {
   //  const [count, setCount] = useState(0);
@@ -9,20 +9,6 @@ function App() {
   //      count is {count}
   //    </button>
   //  </div>;
-  const imgHero = [
-    {
-      url: "./src/assets/children-watching-turtle-ai2x.jpg",
-      alt: "Cildren on our green campus, admiring a Tortoise.",
-    },
-    {
-      url: "./src/assets/o-2.jpg",
-      alt: "Cildren on our green campus, admiring a Tortoise.",
-    },
-    {
-      url: "./src/assets/o-3.jpg",
-      alt: "Cildren on our green campus, admiring a Tortoise.",
-    },
-  ];
 
   return (
     <>
@@ -74,7 +60,10 @@ function App() {
           </div>
         </div>
         <div className="md:w-7/12">
-          <AFSlides className="shape-L mx-auto -mb-16 md:-mb-24">
+          <AFSlides
+            className="shape-L mx-auto -mb-16 md:-mb-24"
+            interval={10000}
+          >
             <img
               className="slide w-full"
               src="./src/assets/children-watching-turtle-ai2x.jpg"
@@ -82,7 +71,7 @@ function App() {
             />
             <img
               className="slide w-full"
-              src="./src/assets/o-1.jpg"
+              src="./src/assets/children-watching-terrarium-ai2x.jpg"
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img

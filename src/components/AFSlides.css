@@ -1,0 +1,14 @@
+.aFSlides {
+  position: relative;
+}
+.aFSlides > * {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.aFSlides > .current {
+  position: relative;
+  display: block;
+  opacity: 1;
+}

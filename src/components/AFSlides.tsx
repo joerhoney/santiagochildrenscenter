@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./AFSlides.css";
 
 interface AFSlidesProps {
   children: React.ReactNode;
@@ -13,26 +14,24 @@ const AFSlides: React.FC<AFSlidesProps> = ({
   delay,
   interval,
 }) => {
-  interval = interval || 5000;
+  interval = interval || 7000;
   delay = delay || 0;
   const [activeIndex, setActiveIndex] = React.useState(0);
   const childrenArray = React.Children.toArray(children);
 
   React.useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      const intervalId = setInterval(() => {
-        setActiveIndex((prevIndex) => {
-          const nextIndex = (prevIndex + 1) % childrenArray.length;
-          return nextIndex;
-        });
-      }, interval); // or any other interval duration
-      return () => clearInterval(intervalId);
-    }, delay); // delay prop value
-    return () => clearTimeout(timeoutId);
-  }, [childrenArray, delay, interval]);
+    const intervalId = setInterval(() => {
+      setActiveIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % childrenArray.length;
+        return nextIndex;
+      });
+    }, interval);
+
+    return () => clearInterval(intervalId);
+  }, [childrenArray, interval]);
 
   return (
-    <div className={className}>
+    <div className={`aFSlides ${className}`}>
       {childrenArray.map((child, index) => (
         <div key={index} className={activeIndex === index ? "current" : ""}>
           {child}

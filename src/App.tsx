@@ -2,6 +2,29 @@ import * as React from "react";
 import "./App.css";
 import AFSlides from "./components/AFSlides";
 
+import logo from "./assets/icons/Santiago-Childrens-Center-logo.svg";
+import stars from "./assets/icons/5-stars.svg";
+import yelp from "./assets/icons/yelp.svg";
+import children_watching_turtle_ai2x from "./assets/photos/children_watching_turtle_ai2x.jpg";
+import children_watching_terrarium_ai2x from "./assets/photos/children_watching_terrarium_ai2x.jpg";
+import children_looking_at_horse from "./assets/photos/children_looking_at_horse.webp";
+import girl_n_horse_looking_at_each_other from "./assets/photos/girl_n_horse_looking_at_each_other.jpg";
+import diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import children_on_patio_ai4x from "./assets/photos/children_on_patio_ai4x.jpg";
+import girl_on_pony_graded from "./assets/photos/girl_on_pony_graded.webp";
+import JeriD from "/assets/testimonials/JeriD.jpg";
+import GivannaN from "/assets/testimonials/GivannaN.jpg";
+import CourtneyT from "/assets/testimonials/CourtneyT.jpg";
+import schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 from "/assets/icons/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import children_grooming_horse from "./assets/photos/children_grooming_horse.webp";
+import children_playing_on_playground from "./assets/photos/children_playing_on_playground.webp";
+import children_n_teacher from "./assets/photos/children_n_teacher.webp";
+
 function App() {
   //  const [count, setCount] = useState(0);
   //  <div className="card">
@@ -16,11 +39,10 @@ function App() {
         H E R O
         =======
       */}
-      <script defer src="src/scripts/aFSlides.js"></script>
       <section className="section md:flex md:gap-8">
         <div className="md:w-5/12">
           <img
-            src="src/assets/icons/Santiago-Childrens-Center-logo.svg"
+            src={logo}
             alt="Santiago Childrens Center logo"
             className="logo pb-5"
           />
@@ -47,13 +69,13 @@ function App() {
           </div>
           <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
             <img
-              src="src/assets/icons/5-stars.svg"
+              src={stars}
               alt="5 stars"
               className="ml-auto w-full min-w-0 max-w-36 self-center"
             />
             <div className="self-center px-2 text-center">on</div>
             <img
-              src="src/assets/icons/yelp.svg"
+              src={yelp}
               alt="Yelp logo"
               className="mr-auto w-full min-w-0 max-w-28 self-center"
             />
@@ -66,22 +88,22 @@ function App() {
           >
             <img
               className="slide w-full"
-              src="./src/assets/photos/children-watching-turtle-ai2x.jpg"
+              src={children_watching_turtle_ai2x}
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img
               className="slide w-full"
-              src="./src/assets/photos/children-watching-terrarium-ai2x.jpg"
+              src={children_watching_terrarium_ai2x}
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img
               className="slide w-full"
-              src="./src/assets/photos/children-looking-at-horse.webp"
+              src={children_looking_at_horse}
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img
               className="slide w-full"
-              src="./src/assets/photos/o-3.jpg"
+              src={girl_n_horse_looking_at_each_other}
               alt="Cildren on our green campus, admiring a Tortoise."
             />
           </AFSlides>
@@ -100,7 +122,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt="Icon of friends"
             />
             <p>Very small class sizes, typically between 6-10 students</p>
@@ -108,7 +130,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>
@@ -119,7 +141,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>Excellent communication with parents</p>
@@ -127,7 +149,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>
@@ -138,7 +160,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>
@@ -152,7 +174,7 @@ function App() {
             <div className="addFuncSlides">
               <img
                 className="-mb-[40%] ml-auto w-auto"
-                src="./src/assets/photos/children-on-patio-ai4x.jpg"
+                src={children_on_patio_ai4x}
                 alt="Children on our patio"
               />
             </div>
@@ -161,7 +183,7 @@ function App() {
             <div className="addFuncSlides">
               <img
                 className="-mb-40 mr-auto w-auto"
-                src="./src/assets/photos/girl-on-pony-graded.webp"
+                src={girl_on_pony_graded}
                 alt="A girl on Sweetie, our pony"
               />
             </div>
@@ -186,19 +208,12 @@ function App() {
             </p>
             <div className="flex gap-6 py-5">
               <div className="shape-S w-28">
-                <img
-                  src="./src/assets/testimonials/Jeri-D.jpg"
-                  alt="Photo of Jeri D"
-                />
+                <img src={JeriD} alt="Photo of Jeri D" />
               </div>
               <div className="text-bold text-aqua">
                 Jeri D.
                 <br />
-                <img
-                  src="./src/assets/icons/5-stars.svg"
-                  alt="5 stars"
-                  className="mr-auto w-24"
-                />
+                <img src={stars} alt="5 stars" className="mr-auto w-24" />
               </div>
             </div>
           </div>
@@ -209,19 +224,12 @@ function App() {
             </p>
             <div className="flex gap-6 py-5">
               <div className="shape-S w-28">
-                <img
-                  src="./src/assets/testimonials/Givanna-N.jpg"
-                  alt="Photo of Jeri D"
-                />
+                <img src={GivannaN} alt="Photo of Jeri D" />
               </div>
               <div className="text-bold text-aqua">
                 Givanna N.
                 <br />
-                <img
-                  src="./src/assets/icons/5-stars.svg"
-                  alt="5 stars"
-                  className="mr-auto w-24"
-                />
+                <img src={stars} alt="5 stars" className="mr-auto w-24" />
               </div>
             </div>
           </div>
@@ -233,19 +241,12 @@ function App() {
             </p>
             <div className="flex gap-6 py-5">
               <div className="shape-S w-28">
-                <img
-                  src="./src/assets/testimonials/Courtney-T.jpg"
-                  alt="Photo of Jeri D"
-                />
+                <img src={CourtneyT} alt="Photo of Jeri D" />
               </div>
               <div className="text-bold text-aqua">
                 Courtney T.
                 <br />
-                <img
-                  src="./src/assets/icons/5-stars.svg"
-                  alt="5 stars"
-                  className="mr-auto w-24"
-                />
+                <img src={stars} alt="5 stars" className="mr-auto w-24" />
               </div>
             </div>
           </div>
@@ -253,7 +254,7 @@ function App() {
         <div className="align-center mx-auto flex w-5/6 justify-around gap-4 pt-8">
           <div className="ml-auto self-center">on</div>
           <img
-            src="src/assets/icons/yelp.svg"
+            src={yelp}
             alt="Yelp logo"
             className="mr-auto w-28 self-center"
           />
@@ -361,7 +362,7 @@ function App() {
           <div className="flex gap-6 py-4">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/icons/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src={flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
               alt=""
             />
             <p>Established in 1983</p>
@@ -371,17 +372,14 @@ function App() {
           <div className="shape-L">
             <AFSlides>
               <img
-                src="./src/assets/photos/children-grooming-horse.webp"
+                src={children_grooming_horse}
                 alt="Children grooming horse"
               />
               <img
-                src="./src/assets/photos/children-playing-on-playground.webp"
+                src={children_playing_on_playground}
                 alt="Children playing on playground"
               />
-              <img
-                src="./src/assets/photos/children-n-teacher.webp"
-                alt="Children and teacher"
-              />
+              <img src={children_n_teacher} alt="Children and teacher" />
             </AFSlides>
           </div>
         </div>

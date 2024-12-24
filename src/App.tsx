@@ -1,5 +1,6 @@
-import { useState } from "react";
+import * as React from "react";
 import "./App.css";
+import AFSlides from "./AFSlides";
 
 function App() {
   //  const [count, setCount] = useState(0);
@@ -8,11 +9,30 @@ function App() {
   //      count is {count}
   //    </button>
   //  </div>;
+  const imgHero = [
+    {
+      url: "./src/assets/children-watching-turtle-ai2x.jpg",
+      alt: "Cildren on our green campus, admiring a Tortoise.",
+    },
+    {
+      url: "./src/assets/o-2.jpg",
+      alt: "Cildren on our green campus, admiring a Tortoise.",
+    },
+    {
+      url: "./src/assets/o-3.jpg",
+      alt: "Cildren on our green campus, admiring a Tortoise.",
+    },
+  ];
 
   return (
     <>
-      <section className="md:flex md:gap-8">
-        <div className="md:w-1/2">
+      {/* 
+        H E R O
+        =======
+      */}
+      <script defer src="src/scripts/aFSlides.js"></script>
+      <section className="section md:flex md:gap-8">
+        <div className="md:w-5/12">
           <img
             src="src/assets/Santiago-Childrens-Center-logo.svg"
             alt="Santiago Childrens Center logo"
@@ -23,191 +43,221 @@ function App() {
             nurtured <br />
             by nature
           </h1>
-          <p className="py-8">
+          <p className="max-w-[420px] pt-8">
             A daycare where children are respected, encouraged, and developed in
             a warm, safe country atmosphere.
           </p>
-          <div className="text-center md:flex md:place-items-start md:gap-8">
+          <div className="stacker gap-8 py-8 text-center md:gap-8 lg:place-items-start lg:py-12">
             <a
-              className="btn shape-S md:max-w-1/2 mx-auto my-4 max-w-[240px] md:block md:shrink md:basis-1/3"
+              className="btn shape-S m-auto flex max-w-[240px] justify-center align-middle md:ml-0"
               href="#"
             >
               <div>EMAIL US</div>
             </a>
-            <div className="text-center md:grow md:text-left">
+            <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
               <div className="font-bold text-forest">OR CALL</div>
-              <div className="pb-6 text-3xl font-bold text-forest">
-                714-309-4237
-              </div>
+              <div className="text-3xl font-bold text-forest">714-309-4237</div>
             </div>
           </div>
-          <div className="mx-auto flex w-5/6 justify-around pb-20 text-center md:ml-0 md:w-max md:text-left">
+          <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
             <img
               src="src/assets/5-stars.svg"
               alt="5 stars"
-              className="ml-auto w-36 self-center"
+              className="ml-auto w-full min-w-0 max-w-36 self-center"
             />
-            <div className="w-10 self-center text-center">on</div>
+            <div className="self-center px-2 text-center">on</div>
             <img
               src="src/assets/yelp.svg"
               alt="Yelp logo"
-              className="mr-auto w-28 self-center"
+              className="mr-auto w-full min-w-0 max-w-28 self-center"
             />
           </div>
         </div>
-        <div className="pt-6 md:w-1/2">
-          <div className="shape-L mx-auto -mb-12 w-max md:w-full">
+        <div className="md:w-7/12">
+          <AFSlides className="shape-L mx-auto -mb-16 md:-mb-24">
             <img
-              className="w-full"
-              src="./src/assets/o-0.jpg"
+              className="slide w-full"
+              src="./src/assets/children-watching-turtle-ai2x.jpg"
               alt="Cildren on our green campus, admiring a Tortoise."
             />
+            <img
+              className="slide w-full"
+              src="./src/assets/o-1.jpg"
+              alt="Cildren on our green campus, admiring a Tortoise."
+            />
+            <img
+              className="slide w-full"
+              src="./src/assets/o-3.jpg"
+              alt="Cildren on our green campus, admiring a Tortoise."
+            />
+          </AFSlides>
+        </div>
+      </section>
+
+      {/* 
+        B E N E F I T S
+        ===============
+      */}
+      <section className="section shape-gradient py-24 text-black md:flex md:gap-8">
+        <div className="grow">
+          <h2 className="w-[240px] pb-2 font-serif text-2xl font-bold text-black">
+            Give Your Child The Best Start
+          </h2>
+          <div className="flex gap-6 py-5">
+            <img
+              className="w-8 flex-shrink-0 text-black"
+              src="./src/assets/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Icon of friends"
+            />
+            <p>Very small class sizes, typically between 6-10 students</p>
+          </div>
+          <div className="flex gap-6 py-5">
+            <img
+              className="w-8 flex-shrink-0 text-black"
+              src="./src/assets/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>
+              A fun and challenging learning environment that sets up a love for
+              learning and an enthusiasm for school
+            </p>
+          </div>
+          <div className="flex gap-6 py-5">
+            <img
+              className="w-8 flex-shrink-0 text-black"
+              src="./src/assets/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Excellent communication with parents</p>
+          </div>
+          <div className="flex gap-6 py-5">
+            <img
+              className="w-8 flex-shrink-0 text-black"
+              src="./src/assets/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>
+              A hands-on approach that acknowledges the unique learning styles
+              for children, especially in the beginning years of school
+            </p>
+          </div>
+          <div className="flex gap-6 py-5">
+            <img
+              className="w-8 flex-shrink-0 text-black"
+              src="./src/assets/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>
+              Incorporation of multiple intelligences (visual, verbal, logical,
+              kinesthetic, etc.) to reach and engage each child
+            </p>
+          </div>
+        </div>
+        <div className="shrink basis-[700px]">
+          <div className="ml-8 w-auto">
+            <div className="addFuncSlides">
+              <img
+                className="-mb-[40%] ml-auto w-auto"
+                src="./src/assets/children-on-patio-ai4x.jpg"
+                alt="Children on our patio"
+              />
+            </div>
+          </div>
+          <div className="mr-8">
+            <div className="addFuncSlides">
+              <img
+                className="-mb-40 mr-auto w-auto"
+                src="./src/assets/girl-on-pony-graded.webp"
+                alt="A girl on Sweetie, our pony"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="shape-gradient m-0 px-6 py-24 text-black">
-        <h2 className="w-[240px] pb-2 font-serif text-2xl font-bold text-black">
-          Give Your Child The Best Start
-        </h2>
-        <div className="flex gap-6 py-5">
-          <img
-            className="w-8 flex-shrink-0 text-black"
-            src="./src/assets/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="Icon of friends"
-          />
-          <p>Very small class sizes, typically between 6-10 students</p>
-        </div>
-        <div className="flex gap-6 py-5">
-          <img
-            className="w-8 flex-shrink-0 text-black"
-            src="./src/assets/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>
-            A fun and challenging learning environment that sets up a love for
-            learning and an enthusiasm for school
-          </p>
-        </div>
-        <div className="flex gap-6 py-5">
-          <img
-            className="w-8 flex-shrink-0 text-black"
-            src="./src/assets/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>Excellent communication with parents</p>
-        </div>
-        <div className="flex gap-6 py-5">
-          <img
-            className="w-8 flex-shrink-0 text-black"
-            src="./src/assets/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>
-            A hands-on approach that acknowledges the unique learning styles for
-            children, especially in the beginning years of school
-          </p>
-        </div>
-        <div className="flex gap-6 py-5">
-          <img
-            className="w-8 flex-shrink-0 text-black"
-            src="./src/assets/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>
-            Incorporation of multiple intelligences (visual, verbal, logical,
-            kinesthetic, etc.) to reach and engage each child
-          </p>
-        </div>
-        <img
-          className="-mb-32 ml-auto mt-16 w-[300px]"
-          src="./src/assets/children-on-patio.jpg"
-          alt="Children on our patio"
-        />
-        <img
-          className="-mb-40 mr-auto w-[300px]"
-          src="./src/assets/girl-on-pony-graded.webp"
-          alt="A girl on Sweetie, our pony"
-        />
-      </section>
-
-      <section className="m-0 px-6 pb-24 pt-32 text-center text-deepgreen">
+      {/* 
+        T E S T I M O N I A L S
+        =======================
+      */}
+      <section className="section pb-24 pt-32 text-center text-deepgreen">
         <h2 className="mx-auto w-[280px] pb-8 font-serif text-2xl font-bold text-black">
           What Other Parents Say About Us
         </h2>
-        <div className="testimonial mx-auto mb-8 w-[240px] text-left">
-          <p>
-            Their daycare has the benefits of a day care center, but with the
-            feel of a family. Daycare doesn't close when they go on vacation or
-            are sick because they have excellent subs.
-          </p>
-          <div className="flex gap-6 py-5">
-            <div className="shape-S w-28">
-              <img
-                src="./src/assets/testimonials/Jeri-D.jpg"
-                alt="Photo of Jeri D"
-              />
+        <div className="cards mx-auto max-w-[300px] gap-8 md:max-w-none md:gap-12">
+          <div className="card text-left">
+            <p>
+              Their daycare has the benefits of a day care center, but with the
+              feel of a family. Daycare doesn't close when they go on vacation
+              or are sick because they have excellent subs.
+            </p>
+            <div className="flex gap-6 py-5">
+              <div className="shape-S w-28">
+                <img
+                  src="./src/assets/testimonials/Jeri-D.jpg"
+                  alt="Photo of Jeri D"
+                />
+              </div>
+              <div className="text-bold text-aqua">
+                Jeri D.
+                <br />
+                <img
+                  src="./src/assets/5-stars.svg"
+                  alt="5 stars"
+                  className="mr-auto w-24"
+                />
+              </div>
             </div>
-            <div className="text-bold text-aqua">
-              Jeri D.
-              <br />
-              <img
-                src="./src/assets/5-stars.svg"
-                alt="5 stars"
-                className="mr-auto w-24"
-              />
+          </div>
+          <div className="card text-left">
+            <p>
+              They made us feel comfortable, welcomed, and they do genuinely
+              love what they do. They have a great set up for the kids.
+            </p>
+            <div className="flex gap-6 py-5">
+              <div className="shape-S w-28">
+                <img
+                  src="./src/assets/testimonials/Givanna-N.jpg"
+                  alt="Photo of Jeri D"
+                />
+              </div>
+              <div className="text-bold text-aqua">
+                Givanna N.
+                <br />
+                <img
+                  src="./src/assets/5-stars.svg"
+                  alt="5 stars"
+                  className="mr-auto w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="card text-left">
+            <p>
+              My 2 year old absolutely loves Miss Sarah and Miss Connie! I
+              struggled to find a daycare that she enjoyed and this one was a
+              perfect match from the start.
+            </p>
+            <div className="flex gap-6 py-5">
+              <div className="shape-S w-28">
+                <img
+                  src="./src/assets/testimonials/Courtney-T.jpg"
+                  alt="Photo of Jeri D"
+                />
+              </div>
+              <div className="text-bold text-aqua">
+                Courtney T.
+                <br />
+                <img
+                  src="./src/assets/5-stars.svg"
+                  alt="5 stars"
+                  className="mr-auto w-24"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="testimonial mx-auto mb-8 w-[240px] text-left">
-          <p>
-            They made us feel comfortable, welcomed, and they do genuinely love
-            what they do. They have a great set up for the kids.
-          </p>
-          <div className="flex gap-6 py-5">
-            <div className="shape-S w-28">
-              <img
-                src="./src/assets/testimonials/Givanna-N.jpg"
-                alt="Photo of Jeri D"
-              />
-            </div>
-            <div className="text-bold text-aqua">
-              Givanna N.
-              <br />
-              <img
-                src="./src/assets/5-stars.svg"
-                alt="5 stars"
-                className="mr-auto w-24"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="testimonial mx-auto mb-8 w-[240px] text-left">
-          <p>
-            My 2 year old absolutely loves Miss Sarah and Miss Connie! I
-            struggled to find a daycare that she enjoyed and this one was a
-            perfect match from the start.
-          </p>
-          <div className="flex gap-6 py-5">
-            <div className="shape-S w-28">
-              <img
-                src="./src/assets/testimonials/Courtney-T.jpg"
-                alt="Photo of Jeri D"
-              />
-            </div>
-            <div className="text-bold text-aqua">
-              Courtney T.
-              <br />
-              <img
-                src="./src/assets/5-stars.svg"
-                alt="5 stars"
-                className="mr-auto w-24"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="align-center mx-auto flex w-5/6 justify-around">
-          <div className="ml-auto w-10 self-center">on</div>
+        <div className="align-center mx-auto flex w-5/6 justify-around gap-4 pt-8">
+          <div className="ml-auto self-center">on</div>
           <img
             src="src/assets/yelp.svg"
             alt="Yelp logo"
@@ -216,7 +266,11 @@ function App() {
         </div>
       </section>
 
-      <section className="shape-gradient m-0 px-6 py-12 text-black">
+      {/* 
+        F A Q S
+        =======
+      */}
+      <section className="section shape-gradient py-12 text-black">
         <h2 className="w-[240px] pb-2 font-serif text-2xl font-bold text-black">
           Frequently Asked Questions
         </h2>
@@ -290,8 +344,12 @@ function App() {
         </details>
       </section>
 
-      <section>
-        <div className="mx-auto my-14 w-[240px]">
+      {/* 
+        G E N E R A L   I N F O
+        =======================
+      */}
+      <section className="section flex flex-col md:flex-row">
+        <div className="mx-auto basis-[300px] self-center md:mr-0">
           <div className="flex gap-6 py-4">
             <img
               className="w-8 flex-shrink-0 text-black"
@@ -315,24 +373,39 @@ function App() {
             <p>Established in 1983</p>
           </div>
         </div>
-        <div className="shape-L mx-auto -mb-8 w-3/4">
-          <img src="./src/assets/o-2.jpg" alt="" />
-        </div>
-      </section>
-
-      <section className="shape-gradient pb-8 pt-16">
-        <a className="btn shape-S mx-auto my-4 max-w-[240px]" href="#">
-          <div>EMAIL US</div>
-        </a>
-        <div className="text-center">
-          <div className="font-bold text-forest">OR CALL</div>
-          <div className="pb-6 text-3xl font-bold text-forest">
-            714-309-4237
+        <div className="-mb-16 mr-auto mt-12 basis-[400px] md:-mb-24">
+          <div className="shape-L">
+            <div className="addFuncSlides">
+              <img src="./src/assets/o-2.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <footer className="copy-S px-6 py-14">
+      {/* 
+        C T A
+        =====
+      */}
+      <section className="section pb-8 pt-24">
+        <div className="stacker gap-8 py-8 text-center md:gap-12 lg:py-12">
+          <a
+            className="btn shape-S m-auto flex max-w-[320px] justify-center align-middle md:mr-0"
+            href="#"
+          >
+            <div>EMAIL US</div>
+          </a>
+          <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
+            <div className="font-bold text-forest">OR CALL</div>
+            <div className="text-3xl font-bold text-forest">714-309-4237</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 
+        F O O T E R
+        ===========
+      */}
+      <footer className="section shape-gradient copy-S py-14">
         <p>©2024 Santiago Children Center</p>
         <p>20362 S Randall st. Orange Ca 92869</p>
         <p>

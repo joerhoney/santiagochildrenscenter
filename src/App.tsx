@@ -20,7 +20,7 @@ function App() {
       <section className="section md:flex md:gap-8">
         <div className="md:w-5/12">
           <img
-            src="src/assets/Santiago-Childrens-Center-logo.svg"
+            src="src/assets/icons/Santiago-Childrens-Center-logo.svg"
             alt="Santiago Childrens Center logo"
             className="logo pb-5"
           />
@@ -47,13 +47,13 @@ function App() {
           </div>
           <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
             <img
-              src="src/assets/5-stars.svg"
+              src="src/assets/icons/5-stars.svg"
               alt="5 stars"
               className="ml-auto w-full min-w-0 max-w-36 self-center"
             />
             <div className="self-center px-2 text-center">on</div>
             <img
-              src="src/assets/yelp.svg"
+              src="src/assets/icons/yelp.svg"
               alt="Yelp logo"
               className="mr-auto w-full min-w-0 max-w-28 self-center"
             />
@@ -66,17 +66,22 @@ function App() {
           >
             <img
               className="slide w-full"
-              src="./src/assets/children-watching-turtle-ai2x.jpg"
+              src="./src/assets/photos/children-watching-turtle-ai2x.jpg"
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img
               className="slide w-full"
-              src="./src/assets/children-watching-terrarium-ai2x.jpg"
+              src="./src/assets/photos/children-watching-terrarium-ai2x.jpg"
               alt="Cildren on our green campus, admiring a Tortoise."
             />
             <img
               className="slide w-full"
-              src="./src/assets/o-3.jpg"
+              src="./src/assets/photos/children-looking-at-horse.webp"
+              alt="Cildren on our green campus, admiring a Tortoise."
+            />
+            <img
+              className="slide w-full"
+              src="./src/assets/photos/o-3.jpg"
               alt="Cildren on our green campus, admiring a Tortoise."
             />
           </AFSlides>
@@ -95,7 +100,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt="Icon of friends"
             />
             <p>Very small class sizes, typically between 6-10 students</p>
@@ -103,7 +108,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>
@@ -114,7 +119,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>Excellent communication with parents</p>
@@ -122,7 +127,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>
@@ -133,7 +138,7 @@ function App() {
           <div className="flex gap-6 py-5">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>
@@ -147,7 +152,7 @@ function App() {
             <div className="addFuncSlides">
               <img
                 className="-mb-[40%] ml-auto w-auto"
-                src="./src/assets/children-on-patio-ai4x.jpg"
+                src="./src/assets/photos/children-on-patio-ai4x.jpg"
                 alt="Children on our patio"
               />
             </div>
@@ -156,7 +161,7 @@ function App() {
             <div className="addFuncSlides">
               <img
                 className="-mb-40 mr-auto w-auto"
-                src="./src/assets/girl-on-pony-graded.webp"
+                src="./src/assets/photos/girl-on-pony-graded.webp"
                 alt="A girl on Sweetie, our pony"
               />
             </div>
@@ -190,7 +195,7 @@ function App() {
                 Jeri D.
                 <br />
                 <img
-                  src="./src/assets/5-stars.svg"
+                  src="./src/assets/icons/5-stars.svg"
                   alt="5 stars"
                   className="mr-auto w-24"
                 />
@@ -213,7 +218,7 @@ function App() {
                 Givanna N.
                 <br />
                 <img
-                  src="./src/assets/5-stars.svg"
+                  src="./src/assets/icons/5-stars.svg"
                   alt="5 stars"
                   className="mr-auto w-24"
                 />
@@ -237,7 +242,7 @@ function App() {
                 Courtney T.
                 <br />
                 <img
-                  src="./src/assets/5-stars.svg"
+                  src="./src/assets/icons/5-stars.svg"
                   alt="5 stars"
                   className="mr-auto w-24"
                 />
@@ -248,7 +253,7 @@ function App() {
         <div className="align-center mx-auto flex w-5/6 justify-around gap-4 pt-8">
           <div className="ml-auto self-center">on</div>
           <img
-            src="src/assets/yelp.svg"
+            src="src/assets/icons/yelp.svg"
             alt="Yelp logo"
             className="mr-auto w-28 self-center"
           />
@@ -342,7 +347,7 @@ function App() {
           <div className="flex gap-6 py-4">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/schedule_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>
@@ -356,7 +361,7 @@ function App() {
           <div className="flex gap-6 py-4">
             <img
               className="w-8 flex-shrink-0 text-black"
-              src="./src/assets/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              src="./src/assets/icons/flag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
             <p>Established in 1983</p>
@@ -364,9 +369,20 @@ function App() {
         </div>
         <div className="-mb-16 mr-auto mt-12 basis-[400px] md:-mb-24">
           <div className="shape-L">
-            <div className="addFuncSlides">
-              <img src="./src/assets/o-2.jpg" alt="" />
-            </div>
+            <AFSlides>
+              <img
+                src="./src/assets/photos/children-grooming-horse.webp"
+                alt="Children grooming horse"
+              />
+              <img
+                src="./src/assets/photos/children-playing-on-playground.webp"
+                alt="Children playing on playground"
+              />
+              <img
+                src="./src/assets/photos/children-n-teacher.webp"
+                alt="Children and teacher"
+              />
+            </AFSlides>
           </div>
         </div>
       </section>

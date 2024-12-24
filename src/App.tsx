@@ -331,7 +331,6 @@ function App() {
             <li>Preschool-aged child daycare</li>
             <li>Virtual Consultations</li>
             <li>Education-based Daycare</li>
-            <li>In-home Infant Care</li>
             <li>Infant Daycare</li>
             <li>Potty Training</li>
             <li>Toddler Daycare</li>

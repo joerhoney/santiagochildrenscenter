@@ -26,7 +26,6 @@ import children_playing_on_playground from "./assets/photos/children_playing_on_
 import children_n_teacher from "./assets/photos/children_n_teacher.webp";
 
 function App() {
-  const ph = "714-478-0155";
   //  const [count, setCount] = useState(0);
   //  <div className="card">
   //    <button onClick={() => setCount((count) => count + 1)}>
@@ -59,13 +58,15 @@ function App() {
           <div className="stacker gap-8 py-8 text-center md:gap-8 lg:place-items-start lg:py-12">
             <a
               className="btn shape-S m-auto flex max-w-[240px] justify-center align-middle md:ml-0"
-              href="#"
+              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#111;&#108;&#116;&#122;&#49;&#48;&#54;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#104;&#97;&#112;&#109;&#97;&#110;&#46;&#101;&#100;&#117;"
             >
               <div>EMAIL US</div>
             </a>
             <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
               <div className="font-bold text-forest">OR CALL</div>
-              <div className="text-3xl font-bold text-forest">{ph}</div>
+              <div className="text-3xl font-bold text-forest">
+                &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
+              </div>
             </div>
           </div>
           <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
@@ -396,13 +397,15 @@ function App() {
         <div className="stacker gap-8 py-8 text-center md:gap-12 lg:py-12">
           <a
             className="btn shape-S m-auto flex max-w-[320px] justify-center align-middle md:mr-0"
-            href="#"
+            href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#111;&#108;&#116;&#122;&#49;&#48;&#54;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#104;&#97;&#112;&#109;&#97;&#110;&#46;&#101;&#100;&#117;"
           >
             <div>EMAIL US</div>
           </a>
           <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
             <div className="font-bold text-forest">OR CALL</div>
-            <div className="text-3xl font-bold text-forest">{ph}</div>
+            <div className="text-3xl font-bold text-forest">
+              &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
+            </div>
           </div>
         </div>
       </section>

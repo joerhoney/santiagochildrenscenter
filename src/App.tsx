@@ -69,7 +69,11 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
+          <a
+            href="https://www.yelp.com/biz/santiago-childrens-center-orange"
+            target="_blank"
+            className="mx-auto flex max-w-[290px] justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left"
+          >
             <img
               src={stars}
               alt="5 stars"
@@ -81,7 +85,7 @@ function App() {
               alt="Yelp logo"
               className="mr-auto w-full min-w-0 max-w-28 self-center"
             />
-          </div>
+          </a>
         </div>
         <div className="md:w-7/12">
           <AFSlides
@@ -255,11 +259,13 @@ function App() {
         </div>
         <div className="align-center mx-auto flex w-5/6 justify-around gap-4 pt-8">
           <div className="ml-auto self-center">on</div>
-          <img
-            src={yelp}
-            alt="Yelp logo"
-            className="mr-auto w-28 self-center"
-          />
+          <a
+            href="https://www.yelp.com/biz/santiago-childrens-center-orange"
+            target="_blank"
+            className="mr-auto block w-28 self-center"
+          >
+            <img src={yelp} alt="Yelp logo" />
+          </a>
         </div>
       </section>
 

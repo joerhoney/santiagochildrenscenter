@@ -26,6 +26,7 @@ import children_playing_on_playground from "./assets/photos/children_playing_on_
 import children_n_teacher from "./assets/photos/children_n_teacher.webp";
 
 function App() {
+  const ph = "714-478-0155";
   //  const [count, setCount] = useState(0);
   //  <div className="card">
   //    <button onClick={() => setCount((count) => count + 1)}>
@@ -64,9 +65,7 @@ function App() {
             </a>
             <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
               <div className="font-bold text-forest">OR CALL</div>
-              <div className="text-3xl font-bold text-forest">
-                &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
-              </div>
+              <div className="text-3xl font-bold text-forest">{ph}</div>
             </div>
           </div>
           <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
@@ -295,10 +294,7 @@ function App() {
             lot.
           </p>
           <p>Address: 20362 S. Randall St., Orange, CA 92869</p>
-          <p>
-            Contact: Sarah Holtz,
-            &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
-          </p>
+          <p>Contact: Sarah Holtz, "714-478-0155" </p>
         </details>
         <details>
           <summary>How long have you been in business?</summary>
@@ -406,9 +402,7 @@ function App() {
           </a>
           <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
             <div className="font-bold text-forest">OR CALL</div>
-            <div className="text-3xl font-bold text-forest">
-              &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
-            </div>
+            <div className="text-3xl font-bold text-forest">{ph}</div>
           </div>
         </div>
       </section>

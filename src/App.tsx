@@ -337,7 +337,7 @@ function App() {
             <li>Toddler Daycare</li>
           </ul>
           <p>
-            <em>* If you have siblings, please contact us.</em>
+            <em>* If your child has siblings, please contact us.</em>
           </p>
         </details>
       </section>

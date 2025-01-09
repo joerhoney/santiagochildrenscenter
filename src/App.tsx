@@ -64,7 +64,9 @@ function App() {
             </a>
             <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
               <div className="font-bold text-forest">OR CALL</div>
-              <div className="text-3xl font-bold text-forest">714-309-4237</div>
+              <div className="text-3xl font-bold text-forest">
+                &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
+              </div>
             </div>
           </div>
           <div className="mx-auto flex justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left">
@@ -293,7 +295,10 @@ function App() {
             lot.
           </p>
           <p>Address: 20362 S. Randall St., Orange, CA 92869</p>
-          <p>Contact: Sarah Holtz, 714-478-0155</p>
+          <p>
+            Contact: Sarah Holtz,
+            &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
+          </p>
         </details>
         <details>
           <summary>How long have you been in business?</summary>
@@ -331,9 +336,13 @@ function App() {
             <li>Preschool-aged child daycare</li>
             <li>Virtual Consultations</li>
             <li>Education-based Daycare</li>
+            <li>Babycare (8+ months)</li>
             <li>Potty Training</li>
             <li>Toddler Daycare</li>
           </ul>
+          <p>
+            <em>* If you have siblings, please contact us.</em>
+          </p>
         </details>
       </section>
 
@@ -397,7 +406,9 @@ function App() {
           </a>
           <div className="m-auto text-center md:ml-0 md:w-max md:text-left">
             <div className="font-bold text-forest">OR CALL</div>
-            <div className="text-3xl font-bold text-forest">714-309-4237</div>
+            <div className="text-3xl font-bold text-forest">
+              &#55;&#49;&#52;&#45;&#52;&#55;&#56;&#45;&#48;&#49;&#53;&#53;
+            </div>
           </div>
         </div>
       </section>

@@ -374,7 +374,7 @@ function App() {
         </div>
         <div className="-mb-16 mr-auto mt-12 basis-[400px] md:-mb-24">
           <div className="shape-L">
-            <AFSlides>
+            <AFSlides interval={10500}>
               <img
                 src={children_grooming_horse}
                 alt="Children grooming horse"

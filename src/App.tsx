@@ -59,6 +59,7 @@ function App() {
             <a
               className="btn shape-S m-auto flex max-w-[240px] justify-center align-middle md:ml-0"
               href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#111;&#108;&#116;&#122;&#49;&#48;&#54;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#104;&#97;&#112;&#109;&#97;&#110;&#46;&#101;&#100;&#117;"
+              target="_blank"
             >
               <div>EMAIL US</div>
             </a>
@@ -404,6 +405,7 @@ function App() {
           <a
             className="btn shape-S m-auto flex max-w-[320px] justify-center align-middle md:mr-0"
             href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#111;&#108;&#116;&#122;&#49;&#48;&#54;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#104;&#97;&#112;&#109;&#97;&#110;&#46;&#101;&#100;&#117;"
+            target="_blank"
           >
             <div>EMAIL US</div>
           </a>

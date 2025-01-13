@@ -73,7 +73,7 @@ function App() {
           <a
             href="https://www.yelp.com/biz/santiago-childrens-center-orange"
             target="_blank"
-            className="mx-auto flex max-w-[290px] justify-around pb-20 text-center md:ml-0 md:w-5/6 md:w-max md:pb-2 md:text-left"
+            className="mx-auto flex max-w-[290px] justify-around pb-20 text-center md:ml-0 md:w-max md:pb-2 md:text-left"
           >
             <img
               src={stars}

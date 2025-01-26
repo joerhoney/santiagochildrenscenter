@@ -121,62 +121,73 @@ function App() {
         B E N E F I T S
         ===============
       */}
-      <section className="section shape-gradient py-24 text-black md:flex md:gap-8">
-        <div className="grow">
+      <section className="section shape-gradient pb-20 pt-24 text-black md:flex md:gap-8">
+        <div className="grow basis-[900px]">
           <h2 className="w-[240px] pb-2 font-serif text-2xl font-bold text-black">
             Give Your Child The Best Start
           </h2>
-          <div className="flex gap-6 py-5">
-            <img
-              className="w-8 flex-shrink-0 text-black"
-              src={diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
-              alt="Icon of friends"
-            />
-            <p>Very small class sizes, typically between 6-10 students</p>
-          </div>
-          <div className="flex gap-6 py-5">
-            <img
-              className="w-8 flex-shrink-0 text-black"
-              src={celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
-              alt=""
-            />
-            <p>
-              A fun and challenging learning environment that sets up a love for
-              learning and an enthusiasm for school
-            </p>
-          </div>
-          <div className="flex gap-6 py-5">
-            <img
-              className="w-8 flex-shrink-0 text-black"
-              src={forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
-              alt=""
-            />
-            <p>Excellent communication with parents</p>
-          </div>
-          <div className="flex gap-6 py-5">
-            <img
-              className="w-8 flex-shrink-0 text-black"
-              src={volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
-              alt=""
-            />
-            <p>
-              A hands-on approach that acknowledges the unique learning styles
-              for children, especially in the beginning years of school
-            </p>
-          </div>
-          <div className="flex gap-6 py-5">
-            <img
-              className="w-8 flex-shrink-0 text-black"
-              src={multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
-              alt=""
-            />
-            <p>
-              Incorporation of multiple intelligences (visual, verbal, logical,
-              kinesthetic, etc.) to reach and engage each child
-            </p>
+          <div className="lg:flex lg:gap-6">
+            <div>
+              <div className="flex items-start gap-6 py-5 align-top">
+                <img
+                  className="w-8 flex-shrink-0 text-black"
+                  src={diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
+                  alt="Icon of friends"
+                />
+                <p>Very small class sizes, typically between 6-10 students</p>
+              </div>
+              <div className="flex items-start gap-6 py-5">
+                <img
+                  className="w-8 flex-shrink-0 text-black"
+                  src={celebration_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
+                  alt=""
+                />
+                <p>
+                  A fun and challenging learning environment that sets up a love
+                  for learning and an enthusiasm for school
+                </p>
+              </div>
+              <div className="flex items-start gap-6 py-5">
+                <img
+                  className="w-8 flex-shrink-0 text-black"
+                  src={forum_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24}
+                  alt=""
+                />
+                <p>Excellent communication with parents</p>
+              </div>
+            </div>
+            <div className="max-md:mb-8">
+              <div className="flex items-start gap-6 py-5">
+                <img
+                  className="w-8 flex-shrink-0 text-black"
+                  src={
+                    volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24
+                  }
+                  alt=""
+                />
+                <p>
+                  A hands-on approach that acknowledges the unique learning
+                  styles for children, especially in the beginning years of
+                  school
+                </p>
+              </div>
+              <div className="flex items-start gap-6 py-5">
+                <img
+                  className="w-8 flex-shrink-0 text-black"
+                  src={
+                    multimodal_hand_eye_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24
+                  }
+                  alt=""
+                />
+                <p>
+                  Incorporation of multiple intelligences (visual, verbal,
+                  logical, kinesthetic, etc.) to reach and engage each child
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="shrink basis-[700px]">
+        <div className="shrink basis-[800px] lg:basis-[600px]">
           <div className="ml-8 w-auto">
             <div className="addFuncSlides">
               <img
@@ -189,7 +200,7 @@ function App() {
           <div className="mr-8">
             <div className="addFuncSlides">
               <img
-                className="-mb-40 mr-auto w-auto"
+                className="-mb-32 mr-auto w-auto"
                 src={girl_on_pony_graded}
                 alt="A girl on Sweetie, our pony"
               />

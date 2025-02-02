@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: ".next/static",
+    sourcemap: true,
   },
 });

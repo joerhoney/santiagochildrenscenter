@@ -6,7 +6,4 @@ module.exports = {
   pages: "src/pages",
   css: "src/css",
   public: "public",
-  build: {
-    sourcemap: true,
-  },
 };

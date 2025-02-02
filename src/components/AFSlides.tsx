@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./AFSlides.module.css";
+import "./AFSlides.css";
 
 interface AFSlidesProps {
   children: React.ReactNode;
@@ -31,12 +31,9 @@ const AFSlides: React.FC<AFSlidesProps> = ({
   }, [childrenArray, interval]);
 
   return (
-    <div className={`${styles.aFSlides} ${className}`}>
+    <div className={`aFSlides ${className}`}>
       {childrenArray.map((child, index) => (
-        <div
-          key={index}
-          className={activeIndex === index ? styles.current : ""}
-        >
+        <div key={index} className={activeIndex === index ? "current" : ""}>
           {child}
         </div>
       ))}
